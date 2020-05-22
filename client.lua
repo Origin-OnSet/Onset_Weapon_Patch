@@ -8,9 +8,6 @@ function SetCheck(value_bool)
         Timer = CreateTimer(function()
             Weapon = {}
             for i = 1, 3 do
-                AddPlayerChat(i)
-                AddPlayerChat(GetPlayerWeapon(i))
-
                 Weapon[i] = GetPlayerWeapon(i)
             end
             CallRemoteEvent("weapon:VerifWeapon", Weapon)
