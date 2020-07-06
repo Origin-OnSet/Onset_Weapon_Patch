@@ -20,6 +20,16 @@ After that you should be able to use the built-in functions
 ## Function
 ```lua
 SetWeapon(player, weapon_model, ammo, equip, weapon_slot , bLoaded)
+GetWeaponPlayer(player) -- return Player Weapon list infos 
+```
+
+## GetWeaponPlayer(player) Array List
+```lua
+WeaponPlayer[player][slot].model = model
+WeaponPlayer[player][slot].ammo = ammo
+WeaponPlayer[player][slot].equip = equip
+WeaponPlayer[player][slot].slot = slot
+WeaponPlayer[player][slot].bLoaded = bLoaded
 ```
 
 ## Exemple
