@@ -12,6 +12,10 @@ AddEvent("OnPlayerQuit", function(player)
     WeaponPlayer[player] = nil
 end)
 
+function GetWeaponPlayer(player)
+    return WeaponPlayer[player]
+end
+AddFunctionExport("GetWeaponPlayer", GetWeaponPlayer)
 
 function SetWeapon(player, model, ammo, equip, slot, bLoaded)
     if player == nil or model == nil then print("[ERROR] Use this syntax SetWeapon(player, model, ammo, equip, slot, bLoaded)") return end
